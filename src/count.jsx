@@ -17,7 +17,7 @@ export default function Count(){
         <input className="w-full active:border-0 text-white focus:outline-none pe-5 text-3xl font-semibold pt-25 text-end" type="text" readOnly value={value}/>
       </div>
         
-        <div className="w-full px-5 mb-5 grid-rows-4 gap-8 p text-white grid">
+        <div className="fixed bottom-0 pb-10 w-full px-8 mb-5 grid-rows-4 gap-12 md:gap-8 p text-white grid">
           <div className="grid grid-cols-4 text-2xl gap-2 text-semibold place-items-center">
             <button  className="  w-full h-full py-10  border-e-1 border-fuchsia-200  rounded-2xl bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-bg-black" type="button" value="c" onClick={handleClear} >C</button>
            <button className="  w-full h-full py-10  border-e-1 border-fuchsia-200  rounded-2xl bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-black" type="button" value="d" onClick={e => setValue(value.slice(0, -1))} >DEL</button>
