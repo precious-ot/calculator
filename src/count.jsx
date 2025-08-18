@@ -19,9 +19,9 @@ export default function Count(){
         
         <div className=" w-full px-5 mb-5 grid-rows-4 gap-4 mt-10 text-white grid rounded-xl">
           <div className="grid grid-cols-4 text-2xl text-semibold place-items-center">
-            <button  className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-bg-black" type="button" value="c" onClick={handleClear} >c</button>
+            <button  className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-bg-black" type="button" value="c" onClick={handleClear} >C</button>
+           <button className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-black" type="button" value="d" onClick={e => setValue(value.slice(0, -1))} >DEL</button>
            <button className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-black" type="button" value="%" onClick={handPercent} >%</button>
-           <button className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-black" type="button" value="d" onClick={e => setValue(value.slice(0, -1))} >d</button>
            <button className="md:w-20 md:h-20 w-18 h-18 border-e-1 border-fuchsia-200  rounded-full bg-radial from-fuchsia-400 from-40% to-fuchsia-950 active:bg-black" type="button" value="/" onClick={e => setValue(value + e.target.value)} >/</button>
           </div>
           <div className="grid text-2xl text-semibold grid-cols-4 place-items-center">
